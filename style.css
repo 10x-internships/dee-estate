@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Space+Grotesk:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Oleo+Script&family=Space+Grotesk:wght@400;500;700&display=swap');
 body{
     background: #FAFAFA;
+    margin: 0;
+}
+.container-landing-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .container-header{
     box-sizing: border-box;
@@ -17,6 +23,7 @@ body{
     justify-content:space-around;
     align-items: center;
     gap: 150px;
+    width: 75rem;
 }
 .header__logo{
 }
@@ -68,41 +75,40 @@ body{
     border: none;
 }
 .container-body{
-    margin: 0rem 5rem;
-    /* background-color: aquamarine; */
+    width: 75rem;
 }
 .container-intro{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    margin: 8rem 0rem;
 }
 .container-intro__content{
-
+    width: 50%;
 }
 .content__title{
-    width: 45rem;
-    height: 12rem;
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
     line-height: 82px;
     color: #0F298B;
+    margin: 0;
 }
 .content__desc{
-    width: 44rem;
-    height: 6rem;
+    width: 100%;
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 41px;
-
+    margin: 0;
     color: rgba(0, 0, 0, 0.81);
 }
 .learn-more-btns{
     display: flex;
     align-items: center;
+    margin: 2rem 0rem;
 }
 .learn-more-btn{
     padding: 10px 0px 10px 10px;
@@ -133,8 +139,8 @@ body{
 }
 .container-intro__img{
     position: relative;
-    width: 50rem;
-    height: 30rem;
+    height: 100%;
+    width: 50%;
 }
 .circle-img{
     width: 4rem;
@@ -147,23 +153,24 @@ body{
     box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.25);
 }
 .intro-img{
+    background-image: url(./assets/unsplash.jpg);
     height: 100%;
     width: 100%;
-
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
+
 .container-search-price{
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 0px 100px;
-    gap: 10rem;
-    width: 70%;
+    padding: 0px 6.25rem;
     height: 10rem;
     margin: 10rem;
     background-color: white;
     box-shadow: 24px 24px 48px rgba(37, 73, 211, 0.1);
-    border-radius: 28px;
+    border-radius: 1.75rem;
 }
 .dropdown{
     height: 5rem;
@@ -172,7 +179,7 @@ body{
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     
     color: #0F298B;
 }
@@ -189,20 +196,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px 10px 10px;
-    gap: 10px;
+    padding: 0.75rem 0px 0.75rem 0.75rem;
+    gap: 0.75rem;
     border: none;
     outline: none;
     width: 10rem;
     height: 4rem;
     background: #2549D3;
-    box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: #FFFFFF;
 }
 .container-how-it-works{
@@ -274,6 +281,8 @@ body{
     opacity: 0.8;   
 }
 .container-attention{
+    margin: 8rem 0rem;
+    /* background-color: #2549D3; */
     display: flex;
     justify-content: space-between;
 }
@@ -297,8 +306,8 @@ body{
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 61px;
+    font-size: 3rem;
+    line-height: 3.8rem;
     color: #0F298B;
 }
 .details__content{
@@ -321,10 +330,232 @@ body{
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: #000000;
 }
 .checkedbox-img{
     margin-right: 1rem;
+}
+.container-properties{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 0rem;
+}
+.properties-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    margin-bottom: 2.5rem;
+}
+.properties-title{
+    margin: 0px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    color: #0F298B;
+}
+.properties-content{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    text-align: center;
+    margin: 0rem;
+    color: rgba(0, 0, 0, 0.81);
+}
+.properties-products{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.viewmore-products-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10rem;
+    height: 3.5rem;
+    background: #2549D3;
+    border-radius: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 25px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+}
+.container-products{
+    display: flex;
+    margin: 5.5rem 0rem;
+    display: flex;
+    justify-content: space-between;    
+}
+.container-product{
+    padding: 0rem 2.5rem 2.5rem 2.5rem;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+.container-product__inner{
+    margin: 0.5rem 0rem;
+}
+.product-img{}
+.container-product-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.container-product-content{}
+.product-title{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 0rem;
+    color: #000000;
+}
+.product-desc{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0663px;
+    line-height: 24px;
+    margin: 0rem;
+    color: #000000;
+    opacity: 0.8;
+}
+.container-product-price{
+
+}
+.product-type{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 0.5rem 0rem;
+    color: #000000;
+}
+.product-price{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 0rem;
+    color: #0F298B;
+
+}
+.container-testimonial-header{
+
+}
+.client-name{
+    margin: 0rem;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    color: #000000;
+}
+.client-location{
+    margin: 0rem;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #000000;
+}
+.container-testmonial-content{}
+.client-content{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #000000;
+    opacity: 0.7;
+    margin: 0rem;
+    margin-top: 1rem;
+}
+.container-testimonial{
+    padding: 1.5rem;
+    background:#FFFFFF;
+    border-radius: 1rem;
+    
+}
+.container-products.testimonials{
+    gap: 2rem;
+}
+.container-footer{
+    position: relative;
+    width: 100%;
+    
+}
+.container-footer-inner{
+    position: absolute;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    height: 37rem;
+    background: #0F298B;
+}
+
+.container-slogan{
+    width: 20rem;
+}
+.logo__title--footer{
+    color: white;
+    margin: 0rem;
+}
+.company-slogan{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin: 0rem;
+}
+.container-details{
+    
+}
+.details-title{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    /* identical to box height */
+    
+
+    color: #FFFFFF;
+}
+.details-content{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    
+    color: #FFFFFF;
+
+    opacity: 0.8;
 }
